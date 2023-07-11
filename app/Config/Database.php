@@ -25,12 +25,14 @@ class Database extends Config
      * The default database connection.
      */
     public array $default = [
-        'DSN'      => 'pgsql:host=192.168.2.95;port=5432;dbname=db_sga;user=postgres;password=Desarrollo8ty7.',
+        // 'DSN'      => 'pgsql:host=192.168.2.95;port=5432;dbname=db_sga;user=postgres;password=Desarrollo8ty7.',
+        'DSN'      => '',
         'hostname' => 'localhost',
-        'username' => '',
+        'username' => 'root',
         'password' => '',
-        'database' => '',
-        'DBDriver' => 'Postgre',
+        'database' => 'biblioteca',
+        // 'DBDriver' => 'Postgre',
+        'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
         'pConnect' => false,
         'DBDebug'  => true,
